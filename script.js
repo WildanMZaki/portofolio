@@ -79,6 +79,7 @@ $('[data-item="all"]').click(e => {
 // Projects Section
 function showProject(){
     getData("./projects.json", data => {
+        $('#total-projects').html(data.length)
         const rows = Math.floor(data.length / 3);
         let p = 0;        
         for (let r = 0; r < rows; r++) {
