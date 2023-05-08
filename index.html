@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./additional.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <a href="#" class="logo">Portofolio</a>
+        </div>
+
+        <nav>
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </nav>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h5>Hello I'm</h5>
+            <h1>Wildan M Zaki</h1>
+            <h4>A Web Developer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nobis repudiandae.</p>
+            <a href="#">About me</a>
+            <a href="#" class="rbtn">Contact me <i class="bx bxs-right-arrow-alt"></i></a>
+        </div>
+
+        <div class="hero-img">
+            <img src="./img/hero.jpg" alt="Hero">
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Sosmed -->
+    <div class="sosmed">
+        <a href="https://instagram.com/wildan_m_zaki" title="My Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#"  title="My Email"><i class="bx bxl-gmail"></i></a>
+        <a href="" title="My LinkedIn Account"><i class="ri-linkedin-line"></i></a>
+    </div>
+
+    <div class="scroll-down">
+        <i class="ri-arrow-down-s-fill"></i>
+    </div>
+    <!-- End Sosmed -->
+
+    <!-- About Section -->
+    <section class="container-fluid about" id="about">
+        <div class="container">
+            <div class="row py-md-4 py-lg-4 pt-3">
+                <h1 class="display-6 fw-bold text-white mt-sm-3" id="aboutMe">About Me</h1>
+            </div>
+            <div class="row pb-5 pt-3 align-items-center">
+                <div class="col-md-6 col-lg-6 text-light">
+                    <div class="d-flex justify-content-center align-items-center" id="myImg">
+                        <div class="border border-3 border-warning rounded-3 w-75">
+                            <img src="./img/about.jpg" alt="" class="img-fluid rounded-3" id="imgAbout">                    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 text-white d-flex flex-column align-items-center mt-md-0 mt-lg-0 mt-5" id="myDescription">
+                    <h3 class="about-bordered">Who i am?</h3>
+                    <p>Saya adalah lulusan SMK Negeri 1 Cianjur, jurusan Teknik Komputer dan Jaringan (TKJ) yang telah terlatih untuk berbagai pekerjaan terkait teknologi. Terutama dalam bidang pengembangan web dan juga administrasi jaringan.</p>
+                    <div class="about-btns mt-5 d-flex">
+                        <a href="https://drive.google.com/drive/u/1/folders/1NpHojzFoqFm9eqaXWTGgg2up1tq1Je0C">
+                            <button type="button" class="btn btn-outline-warning mx-2 resume-btn">Get Resume <i class='bx bx-cloud-download'></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="container-fluid">
+        <div class="container">
+            <div class="row py-md-4 py-lg-4 py-3 justify-content-center">
+                <h1 class="display-6 fw-bold text-white mt-sm-3 text-center border-bottom w-lg-25 w-md-25 w-50 border-2 border-warning p-2">My Skills</h1>
+            </div>
+            <div class="row pb-5 pt-3">
+                <div class="col-md-6 col-lg-6 text-light ">
+                    <div class="d-flex justify-content-center">
+                        <h3 id="hSkillsTitle" class="text-warning">Hard Skills</h3>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb" id="hardSkilBreadcrumb">
+                          <li class="breadcrumb-item item-breadcrumb active" data-item="all">All Skills</li>
+                        </ol>
+                    </nav>
+                    <div id="mySkills">
+                        <!-- Data will be gotten from file skills.json -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 text-white d-flex flex-column align-items-center mt-md-0 mt-lg-0 mt-5">
+                    <div class="d-flex justify-content-center">
+                        <h3 id="" class="text-warning">Soft Skills</h3>                            
+                    </div>
+                    <div class="px-3">
+                        <p class="mx-lg-4 mx-2">Saya adalah orang yang bertanggung jawab, kreatif, dan inovatif dalam melakukan penyelesaian masalah. Saya juga mampu bekerja secara individu maupun di dalam tim. Dan saya juga memiliki jiwa kepemimpinan dan semangat yang tinggi untuk mencapai tujuan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container-fluid">
+        <div class="container">
+            <div class="row py-md-4 py-lg-4 py-3 justify-content-center">
+                <h1 class="display-6 fw-bold text-white mt-sm-3 text-center w-lg-25 w-md-25 w-50 p-2">My Projects</h1>
+            </div>
+            <div class="row pb-5 pt-3">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <h3 id="" class="text-warning">All Projects</h3>                            
+                        <h3 id="" class="text-warning">Total: <span id="total-pseudo-projects">0</span></h3>                            
+                    </div>
+                    <div class="projects-wrapper my-3">
+                        <!-- Projects akan tampil di sini -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+    
+    <!-- Certificates Section -->
+    <section id="certificates" class="container-fluid">
+        <div class="container">
+            <div class="row py-md-4 py-lg-4 py-3 justify-content-center">
+                <h1 class="display-6 fw-bold text-white mt-sm-3 text-center w-lg-25 w-md-25 w-50 p-2">Certificates</h1>
+            </div>
+            <div class="row pb-5 pt-3">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <h4 id="" class="text-warning">Penghargaan</h4>                            
+                    </div>
+                    <div class="row">                  
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body"> 
+                                  <h5 class="card-title">API Tester</h5>
+                                  <p class="card-text"><i class="bx bx"></i></p>
+                                </div>
+                              </div>
+                        </div>                        
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">API Tester</h5>
+                                  <p class="card-text">Like postman but very simple</p>
+                                </div>
+                              </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Certificates Section -->
+    
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JS -->
+    <!-- <script src="./js/jQuery/jquery-3.6.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>    
+</body>
+</html>

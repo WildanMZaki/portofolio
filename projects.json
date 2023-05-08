@@ -1,0 +1,92 @@
+[    
+    {
+        "name": "Digi Dove | API Tester",
+        "link": "https://wildanmzaki.github.io/Digi-Dove/",
+        "image": "api-tester.png",
+        "description": "Seperti Postman tapi dalam versi sederhana dan super simpel",
+        "abilities": [
+            "Bisa melakukan API request dan menampilkan response dari API Server",
+            "Disertai 4 request method (GET, POST, PUT, DELETE)"
+        ],
+        "version": "1.0.0",
+        "grade": 6,
+        "details": {
+            "date-created": "2022-02-28",
+            "date-newest-updated": null,
+            "date-updated-list": [],
+            "technologies": [
+                "HTML", "CSS", "Javascript", "Bootstrap", "jQuery"
+            ],
+            "tags": [
+                "Front-End", "No Database", "Development Tools"
+            ],
+            "requirements": [
+                "Hanya memerlukan server untuk menyimpan source code atau jalankan saja di lokal komputer"
+            ]            
+        }
+    },
+    {
+        "name": "Agenda Digital",
+        "link": "#",
+        "image": "",
+        "description": "Aplikasi untuk membantu administrasi pencatatan data surat masuk dan surat keluar",
+        "abilities": [
+            "Bisa menyimpan data surat masuk dan surat keluar",
+            "CRUD lengkap",
+            "Otomatis membuat tabel data surat baru setiap tahun",
+            "Disertai fitur statistik surat",
+            "Disertai fitur pemulihan data yang terhapus",
+            "Disertai fitur konversi ke bentuk file docs, xls, dan pdf",
+            "Disertai fitur print langsung data"
+        ],
+        "version": "1.5.0",
+        "grade": 8,
+        "details": {
+            "date-created": "2022-03-28",
+            "date-newest-updated": "2023-05-08",
+            "date-updated-list": [
+                "2023-05-08"
+            ],
+            "technologies": [
+                "HTML", "CSS", "Javascript", "Bootstrap", "jQuery", "PHP", "Codeigniter", "MySQL"
+            ],
+            "tags": [
+                "Full-stack", "Use Database", "Codeigniter", "Office Apps"
+            ],
+            "requirements": [
+                "Web Server: Apache",
+                "Database Server: MySQL",
+                "PHP"                
+            ]            
+        }
+    },
+    {
+        "name": "Bookshelf API",
+        "link": "#",
+        "image": "",
+        "description": "Sebuah Micro Services sederhana yang mampu melakukan manajemen data buku-buku",
+        "abilities": [
+            "Menyimpan data buku",
+            "Menampilkan semua buku",
+            "Menampilkan detail buku",
+            "Mengedit data buku",
+            "Menghapus data buku"
+        ],
+        "version": "1.0.0",
+        "grade": 7,
+        "details": {
+            "date-created": "2022-05-02",
+            "date-newest-updated": null,
+            "date-updated-list": [],
+            "technologies": [
+                "Javascript", "Node Js", "Hapi Js"
+            ],
+            "tags": [
+                "Back-End", "No Database", "API", "Node Js", "Micro Services"
+            ],
+            "requirements": [
+                "Node Js versi 18.x.x"
+            ]            
+        }
+    }
+]

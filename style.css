@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {background-color: #1d4355;}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.logo:hover {color: white;}
+
+.navlist {
+    display: flex;
+}
+.navlist a {
+    font-size: 15px;
+    border-bottom: solid 2px transparent;
+    font-weight: 600;
+    margin-left: 50px;
+    color: white;
+    transition: all .55s ease;
+}
+.navlist a:hover {    
+    border-bottom: solid 2px white;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: white;
+    z-index: 11;
+    cursor: pointer;
+    display: none;
+}
+
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(246deg, #69b0c5 0%, #4d7996 29%, #1d4355 76%);
+    /* #4d9559 0%, #38703d 29%, #133917 76% */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+    color: white;
+}
+
+section.hero {
+    padding: 0 20%;    
+}
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.hero-text h1 {
+    font-size: 90px;
+    line-height: 1;
+    margin: 0;
+}
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.hero-text p {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-text a {
+    font-size: 14px;
+    line-height: 1.4;
+    display: inline-block;
+    color: white;
+    background: #509bce;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 30px;
+    transition: all .55s ease;
+}
+.hero-text a:hover {
+    border: 1px solid white;
+    background: transparent;
+    transform: translateX(8px);
+}
+.hero-text a.rbtn {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.rbtn i {
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img img {
+    width: 450px;
+    height: auto;
+    border-radius: 30px;
+}
+
+
+.sosmed {
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.sosmed i {
+    display: block;
+    margin: 26px 0;
+    font-size: 25px;
+    color: white;
+    transition: all .50s ease;
+}
+.sosmed i:hover {
+    color: #92ccf3;
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    display: none;
+    position: fixed;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #bee0f7;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover {
+    transform: translateY(-5px);    
+}
+
+#imgAbout {
+    position: relative;
+    top: 16px;
+    left: 16px;
+}
+
+#about {
+    background: linear-gradient(110deg, #1d4355 25%, #4d7996 90%, #69b0c5 120%);
+}
+
+.resume-btn {
+    transition: all .35 ease;
+}
+.resume-btn:hover {
+    transform: translateY(-10px);
+}
+#about:hover .about-bordered {
+    border-bottom: solid white 1px;
+}
+
+/* Skills Section */
+.more-skill {
+    cursor: pointer;
+}
+.more-skill:hover {
+    color: #317ac7;
+}
+nav.breadcrumb ol.breadcrumb li.breadcrumb-item {
+    color: lightgray;
+    cursor: pointer;
+}
+nav.breadcrumb ol.breadcrumb li.breadcrumb-item.active {
+    color: white;
+}
+/* End Skills Section */
+
+/* Project Sections */
+.project-detail {
+    cursor: pointer;
+}
+/* Project Sections */
+
+
+@media (max-width: 1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .sosmed {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down {
+        right: 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px) {
+    section.hero {
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px) {
+    .hero-img img {
+        width: 350px;
+        height: 100%;
+    }
+    .hero-text h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5 {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px) {
+    section.hero {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text {
+        padding-top: 115px;
+    }
+    .hero-img {
+        text-align: center;
+    }
+    .hero-img img {
+        width: 300px;
+        height: auto;
+    }
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .sosmed {display: none;}
+    .scroll-down {display: none;}
+}
+@media (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 35vh;
+        background-color: #69b0c5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a {
+        margin-left: 0;
+        display: block;
+        margin: 10px 0;
+    }
+    .navlist.open {
+        right: 0;
+    }
+}
+@media (max-width: 680px) {
+    .hero {
+        padding: 0 20px;
+    }
+}

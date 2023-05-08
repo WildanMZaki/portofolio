@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Web Depelopment",
+        "childs": [
+            {
+                "name": "HTML",
+                "value": 95
+            },
+            {
+                "name": "CSS",
+                "value": 80
+            },
+            {
+                "name": "Bootstrap",
+                "value": 85
+            },
+            {
+                "name": "Javascript",
+                "value": 85
+            },
+            {
+                "name": "jQuery",
+                "value": 60
+            },
+            {
+                "name": "PHP",
+                "value": 80
+            },
+            {
+                "name": "Codeigniter",
+                "value": 70
+            }
+        ]
+    },
+    {
+        "name":"Network Administration",
+        "childs": [
+            {
+                "name": "Mikrotik",
+                "value": 60
+            },
+            {
+                "name": "IP Address v4 Subneting",
+                "value": 85
+            },
+            {
+                "name": "Hardware Configuration",
+                "value": 85
+            },
+            {
+                "name": "Server Configuration",
+                "value": 70
+            }
+        ]
+    },
+    {
+        "name": "English Language",
+        "value": 70
+    },
+    {
+        "name": "Microsoft Office",
+        "value": 70
+    }
+]
