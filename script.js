@@ -92,7 +92,9 @@ function showProject(){
                             <div class="card">
                                 <div class="card-header d-flex justify-content-between">
                                     <h5 class="card-title">${element.name}</h5>
-                                    <i class="ri-computer-line project-detail fs-5" title="Get Detail"></i>
+                                    <a href="${element.link}">
+                                        <i class="ri-computer-line project-detail fs-5" title="Get Detail"></i>
+                                    </a>
                                 </div>
                                 <div class="card-body">
                                     <img src="./img/projects-preview/${element.image}" alt="${element.name} Preview" class="mb-3 card-img img-fluid">
