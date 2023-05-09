@@ -114,6 +114,36 @@ function showProject(){
 
 showProject();
 
+// Certificates Section
+function showCerts(){
+    let col = '';
+    certs.forEach((element, ind) => {        
+        let row;
+        if (!ind || !((ind+1)%4)) {
+            row = '<div class="row">';            
+        }
+        col += `
+            <div class="col-lg-3 col-12 mb-lg-0 mb-3">
+                <div class="card">
+                    <div class="card-body"> 
+                    <h5 class="card-title">${element.label}</h5>
+                    <img src="./img/certificates/${element.image}" alt="" class="card-img cert-img" data-link="${element.link}">
+                    </div>                                
+                </div>
+            </div>
+        `;
+        if (!((ind+1)%4) || ind == certs.length -1) {
+            row += col + '</div>';
+            console.log('row :>> ', row);
+            $('#certs-wrapper').append(row);
+            col = '';
+        }
+    });
+   
+}
+
+showCerts();
+
 const sr = ScrollReveal ({
     distance: '65px',
     duration: 1600,
