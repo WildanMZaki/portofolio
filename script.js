@@ -88,7 +88,7 @@ function showProject(){
                 if (p < data.length) {                    
                     const element = data[p];                
                     row += `
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 mb-lg-0 mb-3">
                             <div class="card">
                                 <div class="card-header d-flex justify-content-between">
                                     <h5 class="card-title">${element.name}</h5>
@@ -117,8 +117,8 @@ showProject();
 // Certificates Section
 function showCerts(){
     let col = '';
+    let row;
     certs.forEach((element, ind) => {        
-        let row;
         if (!ind || !((ind+1)%4)) {
             row = '<div class="row">';            
         }
@@ -137,6 +137,7 @@ function showCerts(){
             console.log('row :>> ', row);
             $('#certs-wrapper').append(row);
             col = '';
+            row = '';
         }
     });
    
