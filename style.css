@@ -301,4 +301,9 @@ nav.breadcrumb ol.breadcrumb li.breadcrumb-item.active {
     .hero {
         padding: 0 20px;
     }
+    .cert-img {
+        height: 100px;
+        object-fit: cover;
+        object-position: 10% 20%;
+    }
 }

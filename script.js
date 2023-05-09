@@ -120,14 +120,14 @@ function showCerts(){
     let row;
     certs.forEach((element, ind) => {        
         if (!ind || !((ind+1)%4)) {
-            row = '<div class="row">';            
+            row = '<div class="row mb-lg-3">';            
         }
         col += `
             <div class="col-lg-3 col-12 mb-lg-0 mb-3">
-                <div class="card">
+                <div class="card" data-ind="${ind}">
                     <div class="card-body"> 
                     <h5 class="card-title">${element.label}</h5>
-                    <img src="./img/certificates/${element.image}" alt="" class="card-img cert-img" data-link="${element.link}">
+                    <img src="./img/certificates/${element.image}" alt="${element.label}" class="card-img cert-img">
                     </div>                                
                 </div>
             </div>
@@ -144,6 +144,10 @@ function showCerts(){
 }
 
 showCerts();
+
+$('#certs-wrapper').on('click', '.card', (e) => {
+    
+})
 
 const sr = ScrollReveal ({
     distance: '65px',
