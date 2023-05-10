@@ -269,7 +269,7 @@ nav.breadcrumb ol.breadcrumb li.breadcrumb-item.active {
         grid-template-columns: 1fr;
     }
     .sosmed {display: none;}
-    .scroll-down {display: none;}
+    .scroll-down {display: block;}
 }
 @media (max-width: 990px) {
     #menu-icon {
@@ -302,7 +302,7 @@ nav.breadcrumb ol.breadcrumb li.breadcrumb-item.active {
         padding: 0 20px;
     }
     .cert-img {
-        height: 100px;
+        height: 0px;
         object-fit: cover;
         object-position: 10% 20%;
     }

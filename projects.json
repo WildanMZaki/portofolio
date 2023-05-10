@@ -1,7 +1,9 @@
 [    
     {
         "name": "Digi Dove | API Tester",
+        "status": "production",
         "link": "https://wildanmzaki.github.io/Digi-Dove/",
+        "source": "#",
         "image": "api-tester.png",
         "description": "Seperti Postman tapi dalam versi sederhana dan super simpel",
         "abilities": [
@@ -11,7 +13,7 @@
         "version": "1.0.0",
         "grade": 6,
         "details": {
-            "date-created": "2022-02-28",
+            "date-created": "2023-02-28",
             "date-newest-updated": null,
             "date-updated-list": [],
             "technologies": [
@@ -27,8 +29,10 @@
     },
     {
         "name": "Agenda Digital",
+        "status": "development",
         "link": "#",
-        "image": "",
+        "source": "#",
+        "image": "agenda-digital.png",
         "description": "Aplikasi untuk membantu administrasi pencatatan data surat masuk dan surat keluar",
         "abilities": [
             "Bisa menyimpan data surat masuk dan surat keluar",
@@ -62,8 +66,10 @@
     },
     {
         "name": "Bookshelf API",
-        "link": "#",
-        "image": "",
+        "status": "production",
+        "link": "",
+        "source": "#",
+        "image": "bookshelf-api.png",
         "description": "Sebuah Micro Services sederhana yang mampu melakukan manajemen data buku-buku",
         "abilities": [
             "Menyimpan data buku",
@@ -75,7 +81,7 @@
         "version": "1.0.0",
         "grade": 7,
         "details": {
-            "date-created": "2022-05-02",
+            "date-created": "2023-05-02",
             "date-newest-updated": null,
             "date-updated-list": [],
             "technologies": [

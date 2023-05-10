@@ -92,7 +92,7 @@ function showProject(){
                             <div class="card">
                                 <div class="card-header d-flex justify-content-between">
                                     <h5 class="card-title">${element.name}</h5>
-                                    <a href="${element.link}">
+                                    <a href="./project.html#${p}">
                                         <i class="ri-computer-line project-detail fs-5" title="Get Detail"></i>
                                     </a>
                                 </div>
@@ -145,9 +145,17 @@ function showCerts(){
 
 showCerts();
 
+let selectedCert;
 $('#certs-wrapper').on('click', '.card', (e) => {
-    
-})
+    selectedCert = e.currentTarget.dataset.ind;    
+    $('#certModal').modal('show');
+});
+$('#certModal').on('show.bs.modal', () => {
+    let el = certs[selectedCert];
+    $('#certLabel').html(el.label);
+    $('#certImg').attr('src', `./img/certificates/${el.image}`);
+    $('#certLink').attr('href', el.link);    
+});
 
 const sr = ScrollReveal ({
     distance: '65px',
