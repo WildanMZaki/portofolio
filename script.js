@@ -115,26 +115,28 @@ function showProject(){
 showProject();
 
 // Certificates Section
-function showCerts(){
+function showCerts(filter = null){
+    $('#certs-wrapper').html('');
     let col = '';
     let row;
     certs.forEach((element, ind) => {        
         if (!ind || !((ind+1)%4)) {
             row = '<div class="row mb-lg-3">';            
         }
-        col += `
-            <div class="col-lg-3 col-12 mb-lg-0 mb-3">
-                <div class="card" data-ind="${ind}">
-                    <div class="card-body"> 
-                    <h5 class="card-title">${element.label}</h5>
-                    <img src="./img/certificates/${element.image}" alt="${element.label}" class="card-img cert-img">
-                    </div>                                
+        if ((!filter || filter == 'all') || element.type.includes(filter)) {            
+            col += `
+                <div class="col-lg-3 col-12 mb-lg-0 mb-3">
+                    <div class="card" data-ind="${ind}">
+                        <div class="card-body"> 
+                        <h5 class="card-title">${element.label}</h5>
+                        <img src="./img/certificates/${element.image}" alt="${element.label}" class="card-img cert-img">
+                        </div>                                
+                    </div>
                 </div>
-            </div>
-        `;
+            `;
+        }
         if (!((ind+1)%4) || ind == certs.length -1) {
             row += col + '</div>';
-            console.log('row :>> ', row);
             $('#certs-wrapper').append(row);
             col = '';
             row = '';
@@ -144,6 +146,10 @@ function showCerts(){
 }
 
 showCerts();
+
+$('#certFilter').change(e => {
+    showCerts($('#certFilter').val());
+});
 
 let selectedCert;
 $('#certs-wrapper').on('click', '.card', (e) => {
