@@ -25,12 +25,12 @@ function dateConvert(date) {
 }
 
 const url = document.URL;
-const index = parseInt(url.slice(url.search('#')+1));
+const id = url.slice(url.search('#')+1);
 
-function init(index) {
-    let ind = !index ? 0 : index;
+function init(id = null) {
+    if (!id) { id = 'P2AD' };    
     getData('./projects.json', data => {
-        const selectedProject = data[ind];
+        const selectedProject = data.filter(p => p.id == id)[0];
         $('#projectImg').attr('src', './img/projects-preview/'+selectedProject.image);
         $('#projectDate-Created').html(dateConvert(selectedProject.details["date-created"]));
         $('.projectName').html(selectedProject.name);
@@ -95,4 +95,4 @@ function init(index) {
     });
 }
 
-init(index);
+init(id);

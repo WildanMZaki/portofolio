@@ -1,6 +1,7 @@
 [    
     {
         "name": "Digi Dove | API Tester",
+        "id": "P1DDAT",
         "status": "production",
         "link": "https://wildanmzaki.github.io/Digi-Dove/",
         "source": "https://github.com/WildanMZaki/Digi-Dove",
@@ -29,6 +30,7 @@
     },
     {
         "name": "Agenda Digital",
+        "id": "P2AD",
         "status": "development",
         "link": "#",
         "source": "#",
@@ -66,6 +68,7 @@
     },
     {
         "name": "Bookshelf API",
+        "id": "P3BA",
         "status": "production",
         "link": "",
         "source": "https://github.com/WildanMZaki/bookshelf-api",
@@ -92,6 +95,63 @@
             ],
             "requirements": [
                 "Node Js versi 18.x.x"
+            ]            
+        }
+    },
+    {
+        "name": "Simple Subneting",
+        "id": "P4SS",
+        "status": "production",
+        "link": "https://wildanmzaki.github.io/simple-subneting/",
+        "source": "https://github.com/WildanMZaki/simple-subneting",
+        "image": "simple-subneting.png",
+        "description": "Membantu menghitung subneting IPv4",
+        "abilities": [
+            "Menghitung Subneting IPv4 Kelas C",
+            "Menghitung IPv4 dengan metode VLSM dan CIDR"
+        ],
+        "version": "1.0.0",
+        "grade": 5,
+        "details": {
+            "date-created": "2022-10-19",
+            "date-newest-updated": null,
+            "date-updated-list": [],
+            "technologies": [
+                "HTML", "CSS", "Javascript"
+            ],
+            "tags": [
+                "Front-End", "No Database", "Networker Tools", "Simple"
+            ],
+            "requirements": [
+                "Hanya membutuhkan komputer dengan sebuah browser seperti Google Chrome"
+            ]            
+        }
+    },
+    {
+        "name": "Todo Apps",
+        "id": "P5TA",
+        "status": "production",
+        "link": "https://wildanmzaki.github.io/simple-todo/",
+        "source": "https://github.com/WildanMZaki/simple-todo",
+        "image": "simple-todo.png",
+        "description": "Mencatat hal hal untuk dilakukan",
+        "abilities": [
+            "Mencatat hal-hal yang harus dilakukan"
+        ],
+        "version": "1.0.0",
+        "grade": 4,
+        "details": {
+            "date-created": "2022-10-19",
+            "date-newest-updated": null,
+            "date-updated-list": [],
+            "technologies": [
+                "HTML", "CSS", "Javascript"
+            ],
+            "tags": [
+                "Front-End", "No Database", "Time Management", "Simple"
+            ],
+            "requirements": [
+                "Hanya membutuhkan komputer dengan sebuah browser seperti Google Chrome"
             ]            
         }
     }

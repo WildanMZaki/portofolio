@@ -93,6 +93,9 @@ section.hero {
     line-height: 1.9;
     margin-bottom: 40px;
 }
+.hero-text .sm-sosmed {
+    display: none;
+}
 .hero-text .sm-sosmed i {
     cursor: pointer;
 }
@@ -272,7 +275,7 @@ nav.breadcrumb ol.breadcrumb li.breadcrumb-item.active {
         grid-template-columns: 1fr;
     }
     .sosmed {display: none;}
-    .scroll-down {display: block;}
+    .hero-text .sm-sosmed {display: flex;}
 }
 @media (max-width: 990px) {
     #menu-icon {

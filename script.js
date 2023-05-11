@@ -79,37 +79,30 @@ $('[data-item="all"]').click(e => {
 // Projects Section
 function showProject(){
     getData("./projects.json", data => {
-        $('#total-projects').html(data.length)
-        const rows = Math.floor(data.length / 3);
-        let p = 0;        
-        for (let r = 0; r < rows; r++) {
-            let row = '<div class="row">';
-            for (let c = 0; c < 3; c++) {
-                if (p < data.length) {                    
-                    const element = data[p];                
-                    row += `
-                        <div class="col-lg-4 mb-lg-0 mb-3">
-                            <div class="card">
-                                <div class="card-header d-flex justify-content-between">
-                                    <h5 class="card-title">${element.name}</h5>
-                                    <a href="./project.html#${p}">
-                                        <i class="ri-computer-line project-detail fs-5" title="Get Detail"></i>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <img src="./img/projects-preview/${element.image}" alt="${element.name} Preview" class="mb-3 card-img img-fluid">
-                                    <p class="card-text">${element.description}</p>
-                                </div>
-                            </div>
-                        </div>   
-                    `;
-                    p++;
-                }
-            }
-            row += '</div>';
-            $('.projects-wrapper').append(row);
-        }        
-    })
+        const selectedProjects = ((data.sort((a, b) => a.grade - b.grade)).reverse()).slice(0, 3);
+        let row = '<div class="row">';
+        for (let c = 0; c < 3; c++) {
+            const element = selectedProjects[c];                
+            row += `
+                <div class="col-lg-4 mb-lg-0 mb-3">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="card-title">${element.name}</h5>
+                            <a href="./project.html#${element.id}">
+                                <i class="ri-computer-line project-detail fs-5" title="Get Detail"></i>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <img src="./img/projects-preview/${element.image}" alt="${element.name} Preview" class="mb-3 card-img img-fluid">
+                            <p class="card-text">${element.description}</p>
+                        </div>
+                    </div>
+                </div>   
+            `;
+        }
+        row += '</div>';
+        $('.projects-wrapper').append(row);            
+    });
 }
 
 showProject();
