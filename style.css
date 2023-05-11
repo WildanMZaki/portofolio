@@ -93,7 +93,10 @@ section.hero {
     line-height: 1.9;
     margin-bottom: 40px;
 }
-.hero-text a {
+.hero-text .sm-sosmed i {
+    cursor: pointer;
+}
+.hero-text a.hero-btn {
     font-size: 14px;
     line-height: 1.4;
     display: inline-block;
